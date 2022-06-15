@@ -132,8 +132,8 @@ jobs:
         include:
           - build_variant: "mt7620"
             targets: "NEWIFI-MINI"
-          #- build_variant: "mt7621"
-          #  targets: "K2P NEWIFI3"
+          - build_variant: "mt7621"
+            targets: "K2P NEWIFI3"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
