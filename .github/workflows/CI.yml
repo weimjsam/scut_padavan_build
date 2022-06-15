@@ -133,10 +133,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - build_variant: "mt7620"
-            targets: "NEWIFI-MINI"
+          #- build_variant: "mt7620"
+          #  targets: "NEWIFI-MINI K2P"
           - build_variant: "mt7621"
-            targets: "K2P NEWIFI3"
+            targets: "NEWIFI3"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
