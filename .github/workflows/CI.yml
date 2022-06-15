@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  src_git: https://github.com/hanwckf/rt-n56u.git
+  src_git: https://github.com/keke1023/Padavan.git
   build_dir: /opt/rt-n56u
   images_dir: /opt/images
   ENABLED_CFG: |
