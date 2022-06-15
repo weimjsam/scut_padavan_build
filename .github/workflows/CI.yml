@@ -17,15 +17,16 @@ env:
     CONFIG_FIRMWARE_INCLUDE_EAP_PEAP
     CONFIG_FIRMWARE_INCLUDE_OPENSSH
     CONFIG_FIRMWARE_INCLUDE_NAPT66
+    CONFIG_FIRMWARE_INCLUDE_MINIDLNA
+
+
+  DISABLED_CFG: |
     CONFIG_FIRMWARE_INCLUDE_VLMCSD
     CONFIG_FIRMWARE_INCLUDE_SRELAY
     CONFIG_FIRMWARE_INCLUDE_SOCAT
     CONFIG_FIRMWARE_INCLUDE_MTR
     CONFIG_FIRMWARE_INCLUDE_IPERF3
-    CONFIG_FIRMWARE_INCLUDE_MINIDLNA
     CONFIG_FIRMWARE_INCLUDE_IPSET
-
-  DISABLED_CFG: |
     CONFIG_FIRMWARE_ENABLE_USB 
     CONFIG_FIRMWARE_ENABLE_UFSD 
     CONFIG_FIRMWARE_ENABLE_FAT 
@@ -132,8 +133,8 @@ jobs:
         include:
           - build_variant: "mt7620"
             targets: "NEWIFI-MINI"
-          - build_variant: "mt7621"
-            targets: "K2P NEWIFI3"
+          #- build_variant: "mt7621"
+          #  targets: "K2P NEWIFI3"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
