@@ -10,7 +10,6 @@ env:
   build_dir: /opt/rt-n56u
   images_dir: /opt/images
   
-  
   ENABLED_CFG: |
         CONFIG_FIRMWARE_INCLUDE_LANG_CN
         CONFIG_EXTERNAL_PA_EXTERNAL_LNA
